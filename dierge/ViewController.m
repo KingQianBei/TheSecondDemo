@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic,strong) NSMutableArray *_datasource;
+
 @end
 
 @implementation ViewController
@@ -17,6 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    [self setDataSource];
+    
+    
+    NSLog(@"1235");
+    NSLog(@"1235");
+    NSLog(@"1235");
+    NSLog(@"1235");
+
+
+}
+
+-(void)setDataSource{
+    if (!__datasource) {
+        __datasource = [[NSMutableArray alloc]init];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
